@@ -13,9 +13,11 @@ class _widgetPageState extends State<widgetPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Important Widgets"),
+        // title: Text("Important Widgets"),
+        actions: [
+          customDropDown(),
+        ],
       ),
-      body: customDropDown(),
     );
   }
 }
