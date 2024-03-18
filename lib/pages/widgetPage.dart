@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_important_widgets/pages/customDropDown.dart';
+import 'package:flutter_important_widgets/pages/dropDown.dart';
 
 class widgetPage extends StatefulWidget {
   const widgetPage({super.key});
@@ -13,11 +14,17 @@ class _widgetPageState extends State<widgetPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        // title: Text("Important Widgets"),
+        title: Text("Important Widgets"),
         actions: [
-          customDropDown(),
+          dropDown(),
         ],
       ),
+      // body: Container(
+      //   height: double.infinity,
+      //   width: double.infinity,
+      //   color: Colors.amber.shade200,
+      //   child: dropDown(),
+      // ),
     );
   }
 }
