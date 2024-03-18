@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_important_widgets/pages/customDropDown.dart';
+// import 'package:flutter_important_widgets/pages/customDropDown.dart';
 import 'package:flutter_important_widgets/pages/dropDown.dart';
 
 class widgetPage extends StatefulWidget {
@@ -19,12 +19,11 @@ class _widgetPageState extends State<widgetPage> {
           dropDown(),
         ],
       ),
-      // body: Container(
-      //   height: double.infinity,
-      //   width: double.infinity,
-      //   color: Colors.amber.shade200,
-      //   child: dropDown(),
-      // ),
+      body: Container(
+        width: MediaQuery.of(context).size.width * .7,
+        color: Colors.amber.shade200,
+        child: dropDown(),
+      ),
     );
   }
 }
