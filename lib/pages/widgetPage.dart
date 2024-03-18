@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-// import 'package:flutter_important_widgets/pages/customDropDown.dart';
+import 'package:flutter_important_widgets/pages/appbarPractice.dart';
 import 'package:flutter_important_widgets/pages/dropDown.dart';
 
 class widgetPage extends StatefulWidget {
@@ -13,17 +13,10 @@ class _widgetPageState extends State<widgetPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Important Widgets"),
-        actions: [
-          dropDown(),
-        ],
-      ),
-      body: Container(
-        width: MediaQuery.of(context).size.width * .7,
-        color: Colors.amber.shade200,
-        child: dropDown(),
-      ),
+      appBar: appbarPractice(),
+      // appBar: AppBar(
+      //   title: Text("custom appbar"),
+      // ),
     );
   }
 }

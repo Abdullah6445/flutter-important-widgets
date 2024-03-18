@@ -1,10 +1,7 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 
 class dropDown extends StatefulWidget {
   const dropDown({super.key});
-
   @override
   State<dropDown> createState() => _dropDownState();
 }
@@ -61,7 +58,7 @@ class _dropDownState extends State<dropDown> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: MediaQuery.of(context).size.width * (.4),
+      width: MediaQuery.of(context).size.width * (.9),
       child: DropdownButton(
           hint: Text(
             valueee,
